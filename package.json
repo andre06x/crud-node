@@ -1,0 +1,21 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -r esm src/server.js",
+    "knex:migrate": "knex  --knexfile knexfile.js migrate:latest",
+    "knex:rollback": "knex migrate:rollback"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.10",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+  }
+}
